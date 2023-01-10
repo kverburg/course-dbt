@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: event_model
+    description: "A model for the events"
+    columns:
+      - name: event_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: session_id
+        description: "The primary key for this table"
+      - name: user_id
+        description: "The primary key for this table"
+      - name: event_type
+        description: "The primary key for this table"
+      - name: page_url
+        description: "The primary key for this table"
+      - name: created_at
+        description: "The primary key for this table"
+      - name: order_id
+        description: "The primary key for this table"
+      - name: product_id
+        description: "The primary key for this table"
