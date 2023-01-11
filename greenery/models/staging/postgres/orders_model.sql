@@ -8,7 +8,7 @@ select
     user_id, 
     promo_id, 
     address_id, 
-    created_id, 
+    created_at, 
     order_cost, 
     shipping_cost, 
     order_total, 
