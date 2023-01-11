@@ -5,6 +5,6 @@
 }}
 select 
     promo_id,
-    distount,
+    discount,
     status
 from {{ source('postgres', 'promos') }}
