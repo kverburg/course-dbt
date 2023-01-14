@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: event_model
+  - name: events_model
     description: "A model for the events"
     columns:
       - name: event_id
@@ -24,7 +24,7 @@ models:
       - name: product_id
         description: "The primary key for this table"
 
-  - name: addressses_model
+  - name: addresses_model
     description: "A staging model for the addresses"
     columns:
       - name: address_id
@@ -40,9 +40,9 @@ models:
         description: "The primary key for this table"
         tests:
           - unique
-          - not_null
+          - not_nulls
 
-  - name: orders_items_model
+  - name: order_items_model
     description: "A staging model for the order items"
     columns:
       - name: order_item_id
