@@ -10,16 +10,70 @@ models:
           - unique
           - not_null
       - name: session_id
-        description: "The primary key for this table"
+        description: "The foreign key of the session (table not in model)"
       - name: user_id
-        description: "The primary key for this table"
+        description: "The foreign key of the user table"
       - name: event_type
-        description: "The primary key for this table"
+        description: "The type of event"
       - name: page_url
-        description: "The primary key for this table"
+        description: "The url of the page that this event took place on"
       - name: created_at
-        description: "The primary key for this table"
+        description: "Datetime of the moment the of the event"
       - name: order_id
-        description: "The primary key for this table"
+        description: "The foreign key for the orders table"
       - name: product_id
         description: "The primary key for this table"
+
+  - name: addressses_model
+    description: "A staging model for the addresses"
+    columns:
+      - name: address_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: orders_model
+    description: "A staging model for the orders"
+    columns:
+      - name: order_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: orders_items_model
+    description: "A staging model for the order items"
+    columns:
+      - name: order_item_id
+        description: "The primary key for this table, surrogate from the order and product ids"
+        tests:
+          - unique
+          - not_null
+
+  - name: products_model
+    description: "A staging model for the products"
+    columns:
+      - name: product_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: promos_model
+    description: "A staging model for the promos"
+    columns:
+      - name: promo_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null        
+
+  - name: users_model
+    description: "A staging model for the promos"
+    columns:
+      - name: user_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null  
