@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: dim_users
+    description: "Dimension table for users"
+    columns:
+      - name: user_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+  - name: fact_orders
+    description: "Fact table for orders"
+    columns:
+      - name: order_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null

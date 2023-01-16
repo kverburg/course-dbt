@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: events_model
+  - name: stg_events
     description: "A model for the events"
     columns:
       - name: event_id
@@ -24,7 +24,7 @@ models:
       - name: product_id
         description: "The primary key for this table"
 
-  - name: addresses_model
+  - name: stg_addresses
     description: "A staging model for the addresses"
     columns:
       - name: address_id
@@ -33,7 +33,7 @@ models:
           - unique
           - not_null
 
-  - name: orders_model
+  - name: stg_orders
     description: "A staging model for the orders"
     columns:
       - name: order_id
@@ -42,7 +42,7 @@ models:
           - unique
           - not_nulls
 
-  - name: order_items_model
+  - name: stg_order_items
     description: "A staging model for the order items"
     columns:
       - name: order_item_id
@@ -51,7 +51,7 @@ models:
           - unique
           - not_null
 
-  - name: products_model
+  - name: stg_products
     description: "A staging model for the products"
     columns:
       - name: product_id
@@ -60,7 +60,7 @@ models:
           - unique
           - not_null
 
-  - name: promos_model
+  - name: stg_promos
     description: "A staging model for the promos"
     columns:
       - name: promo_id
@@ -69,7 +69,7 @@ models:
           - unique
           - not_null        
 
-  - name: users_model
+  - name: stg_users
     description: "A staging model for the promos"
     columns:
       - name: user_id

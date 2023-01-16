@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: fact_page_views
+    description: "Fact table for page views"
+    columns:
+      - name: user_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null

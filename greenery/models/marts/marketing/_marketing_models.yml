@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: user_order_facts
+    description: "Fact table for order on the user level"
+    columns:
+      - name: user_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
