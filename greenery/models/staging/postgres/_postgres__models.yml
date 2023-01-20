@@ -40,7 +40,7 @@ models:
         description: "The primary key for this table"
         tests:
           - unique
-          - not_nulls
+          - not_null
 
   - name: stg_order_items
     description: "A staging model for the order items"

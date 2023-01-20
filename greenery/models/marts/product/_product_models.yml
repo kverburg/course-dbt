@@ -4,7 +4,7 @@ models:
   - name: fact_page_views
     description: "Fact table for page views"
     columns:
-      - name: user_id
+      - name: event_id
         description: "The primary key for this table"
         tests:
           - unique

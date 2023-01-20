@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: user_order_facts
+  - name: fact_user_orders
     description: "Fact table for order on the user level"
     columns:
       - name: user_id
