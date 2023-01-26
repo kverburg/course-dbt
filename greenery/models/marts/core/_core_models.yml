@@ -17,3 +17,5 @@ models:
         tests:
           - unique
           - not_null
+  - name: dim_date
+    description: "Date dimension"

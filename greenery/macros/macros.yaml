@@ -1,0 +1,20 @@
+version: 2
+
+macros:
+  - name: 'column_value_counter'
+    description: 'Function to iterate over each value in the column and create a count column for them'
+    docs:
+      show: true
+    arguments:
+      - name: 'column'
+        type: 'string'
+        description: 'Column to iterate over'
+
+  - name: 'grant'
+    description: 'Function to grant select permission on the current model to a given role'
+    docs:
+      show: true
+    arguments:
+      - name: 'role'
+        type: 'string'
+        description: 'Role to give permission to'
