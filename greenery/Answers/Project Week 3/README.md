@@ -95,13 +95,6 @@ Created dim date (in core) with dbt_utils.date_spine
 
 # Snapshot
 ## Answer
-
-## Method
-```SQL
-select *
-from DEV_DB.DBT_KMVERBURGCORISEGMAILCOM.INVENTORY_SNAPSHOT
-where dbt_valid_to ='2023-01-26T16:16:02.473Z'
-```
 | ORDER_ID                             | USER_ID                              | PROMO_ID                             | ADDRESS_ID              | CREATED_AT | ORDER_COST | SHIPPING_COST | ORDER_TOTAL | TRACKING_ID                      | SHIPPING_SERVICE        | ESTIMATED_DELIVERY_AT   | DELIVERED_AT            | STATUS | DBT_SCD_ID | DBT_UPDATED_AT | DBT_VALID_FROM | DBT_VALID_TO |
 |--------------------------------------|--------------------------------------|--------------------------------------|-------------------------|------------|------------|---------------|-------------|----------------------------------|-------------------------|-------------------------|-------------------------|--------|------------|----------------|----------------|--------------|
 | 29d20dcd-d0c4-4bca-a52d-fc9363b5d7c6 | 2a6f290c-40f8-4705-89d9-e8aeb6a4fa7b | aa61ded6-4588-48dd-9759-1bd36ec5d787 | 2021-02-10 02:37:36.000 | 543        | 2.06       | 545.06        | preparing   | 6f0ece3e64107ce3a353abeee0242cc8 | 2023-01-14 13:04:42.549 | 2023-01-14 13:04:42.549 | 2023-01-26 16:16:02.473 |        |            |                |                |              |
@@ -109,3 +102,9 @@ where dbt_valid_to ='2023-01-26T16:16:02.473Z'
 | e2729b7d-e313-4a6f-9444-f7f65ae8db9a | 2bfd97fc-be3c-4137-8996-b44907a368d2 | aa61ded6-4588-48dd-9759-1bd36ec5d787 | 2021-02-10 11:25:33.000 | 380        | 7.5        | 387.5         | preparing   | 337dbef58cd69e8e28d7034de0cd5f51 | 2023-01-14 13:04:42.549 | 2023-01-14 13:04:42.549 | 2023-01-26 16:16:02.473 |        |            |                |                |              |
 
 
+## Method
+```SQL
+select *
+from DEV_DB.DBT_KMVERBURGCORISEGMAILCOM.INVENTORY_SNAPSHOT
+where dbt_valid_to ='2023-01-26T16:16:02.473Z'
+```
