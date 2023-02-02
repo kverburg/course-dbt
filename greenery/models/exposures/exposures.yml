@@ -1,0 +1,15 @@
+version: 2
+
+exposures:  
+  - name: Event Funnel Dashboard
+    description: >
+      Models that are critical to our event funnel dashboard
+    type: dashboard
+    maturity: high
+    url: https://app.sigmacomputing.com/corise-dbt/workbook/Event-Funnel-Dashboard-1XWgNBwQqLeEzJzhuWIMMW?:nodeId=MSE2GluB2m
+    owner:
+      name: Koen Veerburg
+      email: koen@greenery.com
+    depends_on:
+      - ref('fact_sessions')
+      - ref('stg_events')
